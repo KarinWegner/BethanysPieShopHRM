@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\images\bethanylogo.png" />
+    <None Include="wwwroot\images\pattern.png" />
+    <None Include="wwwroot\images\profilePicture.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="BethanysPieShopHRM.Shared\BethanysPieShopHRM.Shared.csproj" />
   </ItemGroup>
 

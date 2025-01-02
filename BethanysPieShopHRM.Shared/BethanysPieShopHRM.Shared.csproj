@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="bin - Copy\**" />
+    <EmbeddedResource Remove="bin - Copy\**" />
+    <None Remove="bin - Copy\**" />
+  </ItemGroup>
+
 </Project>
