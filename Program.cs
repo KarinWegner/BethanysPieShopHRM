@@ -1,4 +1,10 @@
 using BethanysPieShopHRM.Components;
+using BethanysPieShopHRM.Contracts.Repositories;
+using BethanysPieShopHRM.Contracts.Services;
+using BethanysPieShopHRM.Data;
+using BethanysPieShopHRM.Repositories;
+using BethanysPieShopHRM.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace BethanysPieShopHRM
 {
@@ -11,6 +17,13 @@ namespace BethanysPieShopHRM
             // Add services to the container.
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
+            builder.Services.AddDbContextFactory<AppDbContext>(options =>
+            options.UseSqlServer(
+                builder.Configuration["ConnectionStrings:DefaultConnection"]
+                ));
+
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddScoped<IEmployeeDataService, EmployeeDataService>();
 
             var app = builder.Build();
 
