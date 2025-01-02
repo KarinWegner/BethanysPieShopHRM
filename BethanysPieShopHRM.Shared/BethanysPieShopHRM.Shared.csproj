@@ -8,8 +8,11 @@
 
   <ItemGroup>
     <Compile Remove="bin - Copy\**" />
+    <Compile Remove="Domain\**" />
     <EmbeddedResource Remove="bin - Copy\**" />
+    <EmbeddedResource Remove="Domain\**" />
     <None Remove="bin - Copy\**" />
+    <None Remove="Domain\**" />
   </ItemGroup>
 
 </Project>

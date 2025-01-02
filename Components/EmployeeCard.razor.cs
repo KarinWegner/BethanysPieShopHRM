@@ -4,9 +4,19 @@ namespace BethanysPieShopHRM.Components
 {
     public partial class EmployeeCard
     {
-     [Parameter]
+        [Parameter]
         public Employee Employee { get; set; } = default!;
+
         [Parameter]
         public EventCallback<Employee> EmployeeQuickViewClick { get; set; }
+
+        protected override void OnInitialized()
+        {
+            if (string.IsNullOrEmpty(Employee.LastName))
+            {
+                throw new Exception("Last name can't be empty");
+            }
+        }
+
     }
 }
