@@ -1,4 +1,4 @@
-﻿using BethanysPieShopHRM.Shared.Domain;
+﻿using BethanysPieShopHRM.BethanysPieShopHRM.Shared.Domain;
 
 namespace BethanysPieShopHRM.Services
 {

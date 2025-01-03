@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BethanysPieShopHRM.Shared.Domain
+namespace BethanysPieShopHRM.BethanysPieShopHRM.Shared.Domain
 {
     public class Employee
     {
@@ -48,6 +48,7 @@ namespace BethanysPieShopHRM.Shared.Domain
         public double? Latitude { get; set; }
 
         public double? Longitude { get; set; }
+        public List<TimeRegistration> TimeRegistrations { get; set; }
 
 
         [NotMapped]

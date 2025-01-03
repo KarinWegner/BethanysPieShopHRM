@@ -1,4 +1,4 @@
-﻿namespace BethanysPieShopHRM.Shared.Domain
+﻿namespace BethanysPieShopHRM.BethanysPieShopHRM.Shared.Domain
 {
     public class JobCategory
     {

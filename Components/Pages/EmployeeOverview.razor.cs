@@ -1,6 +1,6 @@
-﻿using BethanysPieShopHRM.Contracts.Services;
+﻿using BethanysPieShopHRM.BethanysPieShopHRM.Shared.Domain;
+using BethanysPieShopHRM.Contracts.Services;
 using BethanysPieShopHRM.Services;
-using BethanysPieShopHRM.Shared.Domain;
 using Microsoft.AspNetCore.Components;
 
 
